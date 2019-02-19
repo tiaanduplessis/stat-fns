@@ -1,0 +1,27 @@
+const { Stat } = require('./')
+
+const s = new Stat('65 72 68 64 60 55 73 71 52 63 61 74 69 67 74 50 4 75 67 62 66 80 64 65')
+const s2 = new Stat('132 118 124 109 104 101 125 83 99 131 98 125 97 106 112 92 120 103 111 117 135 143 112 112 116 106 117 119 110 105 128 112 126 105 102')
+
+console.log('=== 1 ===\n')
+console.log('mean', s.mean())
+console.log('max', s.max())
+console.log('min', s.min())
+console.log('sum', s.sum())
+console.log('range', s.range())
+console.log('Q1', s.Q1())
+console.log('Q2', s.Q2())
+console.log('Q3', s.Q3())
+console.log('IQR', s.IQR())
+console.log('Outliers', s.outliers())
+
+console.log('=== 2 ===\n')
+
+console.log('mean', s2.mean())
+console.log('median', s2.median())
+console.log('mode', s2.mode())
+console.log('standard deviation', s2.standardDeviation())
+console.log('coefficient of variation', s2.cv())
+console.log('max', s2.max())
+console.log('min', s2.min())
+console.log(s2.classInterval(), s2.classWidth())
